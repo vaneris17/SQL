@@ -1,4 +1,6 @@
-# This analysis uses the following Netflix Database:
+# This analysis reveals insights about TV and Movie content on Netflix.
+
+# This project was written using PostgreSQL and ustilized the data from the following two Netflix datasets: 
 
 CREATE TABLE netflix_titles_info
     ("show_id" varchar(5), "type" varchar(7), "title" varchar(58), "country" varchar(74), "date_added" timestamp, "release_year" int, "rating" varchar(5), "duration" varchar(9), "listed_in" varchar(74))
@@ -58,7 +60,7 @@ VALUES
     ('s20', NULL, 'Blanca SuÃ¡rez| IvÃ¡n Marcos| Ã“scar Casas| AdriÃ¡n Lastra| Francesc Garrido| Stefan Weinert| Julia MÃ¶ller| Alicia Chojnowski')
     ;
 
-# Analysis 
+# The following SQL was written to answer specific questions according to the content on Netflix:
 
 # How many movie titles are there in the database? (movies only, not tv shows)
 SELECT COUNT (*) 
